@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "example_package_ha"
+version = "0.0.1"
+authors = [
+  { name="Ha Vu", email="havu73@ucla.edu" },
+]
+description = "A python implementation of FEAST -- a method for microbiome data deconvolution"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/havu73/sampleproject"
+"Bug Tracker" = "https://github.com/havu73/sampleproject/issues"
+

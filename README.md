@@ -1,0 +1,8 @@
+# Python implementation of FEAST for microbiome source tracking
+This project is my attempt at learning about expectation-maximization to the T. I tried to reimplement the FEAST algorithm for microbiome source tracking, as outline by the paper [FEAST: fast expectation-maximization for microbial source tracking](https://www.nature.com/articles/s41592-019-0431-x#:~:text=FEAST%20is%20a%20highly%20efficient,each%20of%20the%20source%20environments.) by Shenhav et al., 2019. Their [original implementation](https://github.com/cozygene/FEAST) is in ```R```. Here, I tried to learn the inference framework in this paper and reimplement it using ```numpy, scipy, pandas```
+
+Please refer to the paper for details about the applications and analyses. 
+
+I wrote some notes about the general approaches to EM algorithm and how it is applied in this particular algorithm. The note is in ```FEAST_derivation.pdf```. 
+
+I do not have live demonstration of the code yet. I find the results on the example data to be different from what is provided in FEAST-R version, which I am very sure is due to initialization differences in the two implementation. That is one drawback of EM, i.e. different initializations results in different estimations and hence requires a lot of initializations and averaging the results. In the future, if you are interested in using this code for your problem, or want added features and modifications, please let me know. I only created this for my own learning purposes (which I achieved), and do not have plan to make this more user-friendly yet unless there are requests. 
